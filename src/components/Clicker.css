@@ -1,0 +1,74 @@
+.clicker-container {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: row; /* Stack items vertically */
+    align-items: center; /* Center align items */
+    justify-content: center; /* Center align vertically */
+    padding: 20px; /* Add some space around the clicker */
+    background-color: #ffffff; /* White background */
+    border: 2px solid #007bff; /* Blue border */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    width: 90%;
+    margin: 20px auto; /* Center horizontally */
+}
+
+.clicker-box {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center align items horizontally */
+    justify-content: center; /* Center align items vertically */
+    padding: 20px; /* Add some space around the content */
+    background-color: #ffffff; /* White background */
+    border: 2px solid #007bff; /* Blue border */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    width: 100%;
+    margin: 20px auto; /* Center horizontally */
+    overflow: hidden; /* Ensure content doesn't overflow the container */
+}
+
+.morseCodeReference {
+    max-width: 100%; /* Make the image scale within the container width */
+    max-height: 100%; /* Ensure it doesn't exceed the container height */
+    object-fit: contain; /* Preserve aspect ratio and fit within bounds */
+    border-radius: 5px; /* Optional: Rounded corners for the image */
+}
+
+@media (max-width: 768px) {
+    .clicker-box {
+        width: 90%; /* Reduce the box width for smaller screens */
+    }
+
+    .morseCodeReference {
+        max-width: 80%; /* Scale image to a smaller size for mobile */
+        height: auto; /* Maintain aspect ratio */
+    }
+}
+
+
+.clicker-button {
+    background-color: #007bff; /* Blue background */
+    color: white; /* White text */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 20px; /* Add padding */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Change cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.clicker-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.clicker-count {
+    font-size: 24px; /* Large font size for count */
+    font-weight: bold; /* Bold text */
+    margin: 10px 0; /* Add vertical spacing */
+    color: #333; /* Dark gray text */
+}
+
+h2 {
+    font-size: xxx-large;
+}
+

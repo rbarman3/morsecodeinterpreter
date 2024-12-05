@@ -1,0 +1,17 @@
+.footer {
+    background-color: #f1f1f1; /* Light gray background */
+    color: #333; /* Dark text */
+    text-align: center; /* Center align text */
+    padding: 10px 0; /* Add vertical padding */
+    font-size: 14px; /* Smaller font size */
+    position: fixed; /* Stick to the bottom */
+    bottom: 0; /* Align at the bottom */
+    width: 100%; /* Full width */
+    border-top: 1px solid #ddd; /* Optional: Add a subtle border */
+}
+
+@media (max-width: 768px) {
+    .footer {
+        font-size: 12px;
+    }
+}
